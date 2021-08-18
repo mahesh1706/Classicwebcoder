@@ -1,0 +1,378 @@
+<HTML>
+    <HEAD> 
+  <meta charset="UTF=8">
+  <meta NAME ="VIEWPORT" content="WIDTH=DEVICE-WITH, INITIAL-SCALE=1.0">
+  <meta http-equiv="X-UA-COMPATIBE" content="IE=EDGE"  >
+  <link rel="stylesheet" href="assets/css/CLASSICWEBCODER.CSS"/>  
+  <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+ <style>
+   .card{
+  font-family: "Candara", sans-serif;
+  width: 340px;
+  display: left;
+  position: sticky;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image img{
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.profile-image img{
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-top: -75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  border: 10px solid #fff;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.profile-image img:hover{
+  transform: scale(1.1);
+}
+
+.card-content h3{
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+.card-content p{
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 20px 5px 20px;
+}
+
+.icons{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+.icons a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #0ABDE3;
+  padding: 0 14px;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.icons a:hover{
+  color: #000;
+  transform: scale(1.5);
+}
+
+body{
+  background-color:#34a2bf2b; 
+}
+
+
+
+
+.box{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+  }
+  .cardS{
+    position:sticky;
+    width: 300px;
+    height: 350px;
+    background:rgb(174, 238, 238);
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+  .cardS:before,
+  .cardS:after
+  {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background::rgb(174, 238, 238);
+    z-index:-1;
+  }
+  .cardS:hover:before{
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .cardS:hover:after{
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .cardS .imgBx{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .cardS:hover .imgBx
+  {
+    bottom: 80px;
+  }
+
+  .cardS .imgBx img{
+      position: absolute; ;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .cardS .details{
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      height: 60px;
+      text-align: center;
+  }
+
+  .cardS .details h2{
+   margin: 0;
+   padding: 0;
+   font-weight: 600;
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+   text-transform: uppercase;
+   font-family: 'Satisfy', cursive;
+  } 
+
+  .cardS .details h2 span{
+  font-weight: 900;
+  font-size: 32px;
+  color: #1900ff91;
+  display: block;
+  margin-top: 5px;
+  font-family: 'Satisfy', cursive;
+  }
+.card{
+     height: 800px;
+     width: 1300px;
+    margin: 0 20px;
+    background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+  animation: animate 1s linear infinite;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+ 
+ 
+.card .img{
+    height: 900px;
+    width: 100%;
+}
+
+.card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.crad.top-text{
+    padding: 5px;
+}
+
+.card .top-text .name{
+   font-size: 25px;
+   font-weight: 600;
+   color: #202020;
+}
+
+.crad.top-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3e ;
+    line-height: 20px;
+}
+
+.card .bottom-text{
+    padding: 0 20px 10px 20px;
+     margin-top :5px ;
+    ;
+    
+}
+
+
+  }
+ </style>
+  <TITLE>@CLASSICWEBCODER</TITLE>
+    </HEAD>
+  <body bgcolor ="">
+  <NAV>
+  <DIV CLASS="LOGO">
+  <H1 style="color:#6b086e;"> CLASSICWEBCODER   </H1>
+  </DIV>
+  <UL class="menu">
+  <li><A href="index.HTML">HOME</A></li>
+  
+  <li><a href="2.html" >SERVICES</a></li>
+  
+  <LI><A href="3.html">ABOUT</A></LI>
+  
+  <LI><A href="4.html">CONTACTS</A></LI>
+  
+  
+  
+  </UL>
+  
+  
+  
+  </NAV>
+  <div>
+    <img class="img" src="https://jgateplus.com/home/wp-content/uploads/2017/09/ABOUT-US-2-e1506465935990.png" height="500" width="1400">
+  
+    <img class="img" src="https://image.freepik.com/free-vector/young-people-illustration-design_23-2148473079.jpg" height="500" width="1400" >
+    <img class="img" src="https://www.aryvart.com/images/about-banner.jpg" height="500" width="1400" >
+
+    
+  </div>
+  <script>
+    var myIndex = 0;
+  mySlides();
+  
+  function mySlides(){
+  var i;
+  var x= document.getElementsByClassName("img");
+  for(i=0;i<x.length;i++){
+  x[i].style.display="none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(mySlides, 4000); 
+  
+  }
+</SCRIPT>
+<HR>
+  <CENTER>
+  <div class="LOGO">
+ <H1 style="color:#6b086e;">ABOUT US</H1>
+</div>
+</CENTER>
+    <img src="assets/image/3.1.svg" width="1400" ></img>
+  <center>
+    <div class="box">
+      <div class="cardS">
+        <div class="imgBx">
+            <img src="assets/image/mah.jpg" alt="images">
+        </div>
+        <div class="details">
+            <h2>FOUNDER<br><span>MAHESH</span></h2>
+        </div>
+      </div>
+    
+       <div class="cardS">
+         <div class="imgBx">
+            <img src="assets/image/nav.jpg" alt="images">
+         </div>
+         <div class="details">
+            <h2>CO-FOUNDER<br><span> NAVEEN</span></h2>
+          </div>
+       </div>
+    
+      
+         
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+   
+    <div class="container">
+      <div class="card">
+<img src="assets/image/3.2.svg"height="350"></img>
+<ul style="color: #fff;">
+           <li><h2>* Project manager: Without one of these, it’s very easy for a project to spiral out of control. A project manager is there to facilitate communication, manage the project, and ensure everybody stays on track.
+          </h2> </li><br>
+          <li><h2>* Project architect/strategist: The architect or strategist helps to formulate the website strategy. They research and analyze the current website, craft personas for the target audience, and create wireframes for the new site.</h2></li><br>
+          <li><h2>* Web designer: An integral part of the team, a web designer is responsible for the design and functionality of the website. A talented designer will take a concept and bring it to life.</h2></li><br>
+            <li><h2>* Back-end developer: The back-end developer takes the strategy and design and builds the framework for the site interface. They develop the code, perform numerous tests, and deal with any bugs or issues that arise.</h2></li><br>
+              <li><h2>* Front-end developer: The front-end developer develops and implements the part of the website that users engage with, and makes it look good across a range of browsers and devices.</h2></li><br>
+                <li><h2>* The tester will try out the website on a range of devices and browsers, and try to break the site to find out if it has any weaknesses.</h2></li><br>
+          </ul>
+         </div>
+     </div>
+      </div>
+      </div>
+
+      
+      <br>
+      <br>
+      <br>
+      
+
+</center>
+
+<footer>
+  <CENTER>
+<div class="st">
+  <h1>@FOLLOW ON SOCIAL MEDIA@</h1>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <ul class="icons">
+
+<li><a href="https://www.linkedin.com/company/classicwebcoder/" target="_blank"><span class="fab fa-linkedin"></span></span></a></li>
+<li><a href="#"><span class="fab fa-stack-overflow"></span></a></li>
+<li><a href="#"><span class="fab fa-github"></span></a></li>
+<li><a href="https://www.youtube.com/channel/UCW-vAPrD3hqtZe_jN3E3Yaw" target="_blank"><span class="fab fa-youtube"></span></a></li>
+</ul>
+ 
+
+
+
+
+  
+  <hr>
+  <div class="HH">
+  <h2 style="color:#fff;">© 2020 CLASSICWEBCODER . coded by MAHESHWARAN.M</h2>
+</div>
+  
+    </CENTER>
+  </div>
+
+
+</footer>
+</BODY>
+  </HTML>

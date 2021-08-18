@@ -1,0 +1,231 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  
+}
+
+
+nav{
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    background-color:  #34a2bf2b;
+    font-family: c;
+    font-family: 'Satisfy', cursive;
+     
+
+}
+
+.logo{
+    text-transform:uppercase ;
+    letter-spacing: 5px;
+font-size:23px;
+}
+
+.nav-links{ 
+    display: flex;
+    background:  ;
+    justify-content: space-around;
+    width: 55%;
+    height: 25%;
+    letter-spacing: 4px;   
+    font-weight: bold; 
+    font-size:20px;
+    color:#000000;
+    
+}menu{
+    float: right;
+  list-style: none;
+  margin: 20px;
+  
+}
+
+.menu li{
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+.menu li a{
+  text-decoration: none;
+  color: #6b086e;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  border: 1px solid #34a2bf2b;
+}
+
+.menu li a:hover{
+  background: #6b086e;
+  transition: .2s;
+  color: rgb(116, 212, 236);
+}
+
+iframe{
+  display: CENTER;
+  background-color: dimgray;
+}
+.de{
+  background-color: dimgray;
+  font-weight: 9000px;
+  font-size: xx-large;
+  color:rgb(255, 57, 57);
+  letter-spacing: 5px;
+  font-family: 'Satisfy', cursive;
+}
+.P{
+  background-color: dimgray;
+  font-weight: 9000px;
+  font-size: xx-large;
+  color:rgb(168, 230, 178);
+  letter-spacing: 5px;
+  font-family: 'Satisfy', cursive;
+}
+
+
+.P2{
+  background-color: dimgray;
+  font-weight: 7500px;
+  font-size: x-large;
+  color:rgb(235, 156, 103);
+  letter-spacing: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+.wrapper{
+  display: grid;
+  margin: 200px 90px auto;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+@media (max-width: 700px) {
+  .wrapper{
+    margin: 200px auto;
+  }
+}
+.wrapper .box{
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+.wrapper .box .front-face{
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .front-face .icon{
+  height: 80px;
+}
+.box .front-face .icon i{
+  font-size: 65px;
+}
+.box .front-face span,
+.box .back-face span{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .front-face .icon i,
+.box .front-face span{
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 220px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+  transform: translateY(110px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .back-face p{
+  margin-top: 10px;
+  text-align: justify;
+}
+.box:hover .back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.box:hover .front-face{
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+
+
+
+
+
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background-color:rgb(149, 142, 250);
+}
+
+.st{
+  font-family:'Satisfy', cursive; ;
+}
+
+.icons{
+  list-style: none;
+
+}
+.icons li{
+  height: 70px;
+  width: 70px;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  position: relative;
+}
+.icons li:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 10%;
+  background-color:linear-gradient(45deg, #7b00e0, #ae31d9);
+  transition: all 0.3s ease-in;
+}
+.icons li:hover:before{
+  transform: rotate(360deg);
+  border-radius: 100%;
+}
+.icons li a span{
+  font-size: 27px;
+  line-height: 70px;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+.icons li:hover a span{
+  transform: scale(1.2);
+  color: rgb(233, 119, 13);
+}
+
+.HH{
+  background-color: black;
+}

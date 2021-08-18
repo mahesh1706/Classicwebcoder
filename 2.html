@@ -1,0 +1,775 @@
+ <HTML>
+  <HEAD> 
+<meta charset="UTF=8">
+<meta NAME ="VIEWPORT" content="WIDTH=DEVICE-WITH, INITIAL-SCALE=1.0">
+<meta http-equiv="X-UA-COMPATIBE" content="IE=EDGE"  >
+<link rel="stylesheet" href="assets/css/CLASSICWEBCODER.CSS"/><link rel="stylesheet" href="4.CSS"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<style>
+  .services-section{
+  background: url(bg.jpg);
+  background-size:1200px;
+  padding: 60px 0;
+  background:no-repeat;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: rgb(10, 57, 134);
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #0975f0;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: rgb(0, 59, 251);
+  cursor: pointer;
+}
+
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #003cbd;
+  color: #003cdb;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #5c30eb;
+  color: #ddd;
+}
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
+}
+
+  container{
+    position: relative;
+    width: 1050px;
+    height: 40px;
+    margin: 240px auto;
+    background: rgba(0, 4, 248, 0.76);
+  }
+
+  .bx{
+    position: relative;
+    width: 500px;
+    height: 70px;
+    margin: 240px auto;
+    background: rgb(0, 62, 168);
+  }
+  
+  body{
+  background-color:#34a2bf2b; 
+}
+
+.wrapper{
+  display: grid;
+  margin: 200px 90px auto;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+@media (max-width: 700px) {
+  .wrapper{
+    margin: 200px auto;
+  }
+}
+.wrapper .box{
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+.wrapper .box .front-face{
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .front-face .icon{
+  height: 80px;
+}
+.box .front-face .icon i{
+  font-size: 65px;
+}
+.box .front-face span,
+.box .back-face span{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .front-face .icon i,
+.box .front-face span{
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+
+  -webkit-text-fill-color: transparent;
+}
+.box .back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 220px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+  transform: translateY(110px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .back-face p{
+  margin-top: 10px;
+  text-align: justify;
+}
+.box:hover .back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.box:hover .front-face{
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+
+
+.title{
+  width:100%;
+  text-align: center;
+}
+.title h1{
+  font-size:50px;
+  font-family: 'Exo', sans-serif;
+}
+.card1 {
+  text-align:center;
+  position: sticky;
+  left: 100px;
+  width: 400px;
+  height: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+  transition:.6s;
+  
+  transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+  box-shadow: 0px 20px 60px rgba(0,0,0, 0.5);
+}
+.card1:hover{
+  transform: rotatex(0deg);
+  transform: rotatez(0deg);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.card1 img{
+  transform: translateY(15px);
+  width:350px;
+  height:155px;
+}
+h3{
+  font-size:25px;
+  font-family: 'Satisfy', cursive;
+  color:rgb(245, 13, 13);
+  text-shadow: 0 0 2px rgb(255,255,255);
+  transform: translatey(10px);
+}
+
+p{
+  
+  font-family: 'Satisfy', cursive;
+  color: #fff;
+  text-align:justify;
+  text-shadow: 0 0 2px rgb(0, 0, 0);
+ 
+}
+
+
+.card2 {
+  text-align:left;
+  position: sticky;
+  left: 550px;
+  width: 350px;
+  height: 550px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+  animation: animate 1s linear infinite;
+  transition:.6s;
+  
+  transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+}
+.card2:hover{
+   transform: rotatex(0deg);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.card2 img{
+  transform: translateY(15px);
+  width:350px;
+  height:155px;
+}
+.card3{
+  text-align:right;
+  position:sticky;
+  left: 1000px;
+  width: 350px;
+  height: 550px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+  transition:.6s;
+  transform: rotatex(75deg) translatey(-200px) translatez(-100px);
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+}
+.card3:hover{
+   transform: rotatex(0deg);
+  transition:.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+.card3 img{
+  transform: translateY(15px);
+  width:350px;
+  height:155px;
+}
+
+.box{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+}
+
+  .cards{
+    position:sticky;
+    width: 300px;
+    height: 350px;
+    background:rgb(174, 238, 238);
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+  .cards:before,
+  .cards:after
+  {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background:rgb(174, 238, 238);
+    z-index:-1;
+  }
+  .cards:hover:before{
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .cards:hover:after{
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .cards.imgBx{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .cards:hover.imgBx{
+    bottom: 80px;
+  }
+
+  .cards .imgBx img{
+      position: absolute; ;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .cards .details{
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      height: 60px;
+      text-align: center;
+  }
+
+  .cards .details h2{
+   margin: 0;
+   padding: 0;
+   font-weight: 600;
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+   text-transform: uppercase;
+   font-family: 'Satisfy', cursive;
+  } 
+
+  .cards .details h2 span{
+  font-weight: 900;
+  font-size: 32px;
+  color: #1900ff91;
+  display: block;
+  margin-top: 5px;
+  font-family: 'Satisfy', cursive;
+  }
+ 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    background-color:  #34a2bf2b;
+    font-family: c;
+    font-family: 'Satisfy', cursive;
+     
+
+}
+
+.logo{
+    text-transform:uppercase ;
+    letter-spacing: 5px;
+font-size:23px;
+}
+
+.nav-links{ 
+    display: flex;
+    background:  ;
+    justify-content: space-around;
+    width: 55%;
+    height: 25%;
+    letter-spacing: 4px;   
+    font-weight: bold; 
+    font-size:20px;
+    color:#000000;
+    
+}
+.menuu{
+    align-items: center;
+  list-style: none;
+  margin: 20px;
+  
+}
+
+.menuu li{
+  display: flex;
+  margin: 10px 5px;
+}
+
+.menuu li a{
+  text-decoration: none;
+  color: #6b086e;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  border: 1px solid #34a2bf2b;
+}
+
+.menuu li a:hover{
+  background: #6b086e;
+  transition: .2s;
+  color: rgb(116, 212, 236);
+}
+
+
+
+
+.card{
+  height: 1000px;
+  width: 1300px;
+ margin: 0 20px;
+ background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+animation: animate 1s linear infinite;
+ box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+ text-align: justify;
+}
+
+
+.card .img{
+ height: 900px;
+ width: 100%;
+}
+
+.card .img img{
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+
+}
+
+.crad.top-text{
+ padding: 5px;
+}
+
+.card .top-text .name{
+font-size: 25px;
+font-weight: 600;
+color: #202020;
+}
+
+.crad.top-text p{
+ font-size: 20px;
+ font-weight: 600;
+ color: #e74c3e ;
+ line-height: 20px;
+}
+
+.card .bottom-text{
+ padding: 0 20px 10px 20px;
+  margin-top :5px ;
+ ;
+ 
+}
+</style>
+
+
+<TITLE>@CLASSICWEBCODER</TITLE>
+  </HEAD>
+<body background="b.jpg">
+<NAV>
+<DIV CLASS="LOGO">
+<H1 style="color:#6b086e;"> CLASSICWEBCODER   </H1>
+</DIV>
+<UL class="menu">
+<li><A href="index.HTML">HOME</A></li>
+
+
+<li><a href="2.html" >SERVICES</a></li>
+
+<LI><A href="3.html">ABOUT</A></LI>
+
+<LI><A href="4.html">CONTACTS</A></LI>
+
+
+
+</UL>
+
+
+
+</NAV>
+
+<div>
+  <img class="img" src="assets/image/2.png" height="500" width="1400">
+ 
+  <img class="img" src="assets/image/1.png" height="550" width="1400" >
+  <img class="img" src="assets/image/4.jpg"  height="500" width="1400">
+ 
+</div>
+<script>
+  var myIndex = 0;
+mySlides();
+
+function mySlides(){
+var i;
+var x= document.getElementsByClassName("img");
+for(i=0;i<x.length;i++){
+x[i].style.display="none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(mySlides, 4000); 
+
+}
+
+</script>
+
+
+<CENTER>
+  <div class="LOGO">
+ <H1 style="color:#6b086e;">SERVICES</H1>
+</div>
+</CENTER>
+
+
+
+<BR>
+  <BR>
+    <h1 class="section-title">Our Services</h1>
+    <div class="border"></div>
+<h1 class="section-title">  we provide a reliable and affordable service</h1>
+
+
+    <center>
+      <img src="assets/image/^.svg">
+    </img>
+    
+<br>
+<br>
+<div class="services-section">
+  <div class="inner-width">
+    <h1 class="section-title">Our Services</h1>
+    <div class="border"></div>
+    <div class="services-container">
+
+      <div class="service-box">
+        <div class="service-icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <div class="service-title">Web Designs</div>
+        <div class="service-desc">
+          
+        </div>
+      </div>
+      <br>
+      <br><hr>
+
+      <div class="service-box">
+        <div class="service-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="service-title">   Web Development   </div>
+        <div class="service-desc">
+          
+        </div>
+      </div>
+      <br>
+      <br><hr>
+
+
+      <div class="service-box">
+        <div class="service-icon">
+          <i class="fas fa-brush"></i>
+        </div>
+        <div class="service-title">Responsive Designs</div>
+        <div class="service-desc">
+          
+        </div>
+      </div>
+      <br>
+      <br><hr>
+      
+      <div class="service-box">
+        <div class="service-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <div class="service-title"> Databases</div>
+        <div class="service-desc">
+       
+        </div>
+      </div>
+      <br>
+      <img src="assets/image/p.svg" width="1400"></img>
+    </center>
+<center>
+<div class="wrapper">
+  <div class="box">
+    <div class="front-face">
+     <img src="assets/image/i.svg"></img>
+    </div>
+<div class="back-face">
+      <span>Web Design</span>
+      <p>That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.</p>
+</div>
+
+</div>
+<div class="box">
+    <div class="front-face">
+      <img src="assets/image/h.svg"></img>
+    </div>
+<div class="back-face">
+      <span>Web development</span>
+      <p>Planning & Developmente
+        You just have to provide us the framework, the entire planning and development is our headache.
+</p>
+</div>
+</div>
+<div class="box">
+    <div class="front-face">
+      
+<img src="assets/image/j.svg"> </img>
+
+    </div>
+<div class="back-face">
+      <span>RESPONSIVE DESIGNS
+
+
+      </span>
+<p>Responsive Design
+  We offer responsive design options on our  website builder so that the designs are always optimised for tablet, mobile, and desktop browsing</p>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<img src="assets/image/2.3.svg" ></img>
+</center>
+
+
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="card">
+    <center>
+    <h1 style="color: #fff;">We love working for our loveable clients</h1>
+<img src="assets/image/2.2.svg" width="1300" height="550"></img>
+<h2 style="color: #fff;">
+     <br> We give a full support for their requirements and hence we are proud for a number of customers for our company.<hr>
+    <br> We do:
+     We analyze the customer requirements and the way how they work with their current system and develop a perfect system that matches all their requirements which exclude the risks and complexity of the system they use in current.<hr>
+    <br>We make your websites creatively and easier, by bringing a system which meets all your requirements and brings our requirements to your desk. The main parameters of "Classicwebcoder"are Enterprise Resource Planning and Web development.
+    </h2> </center>
+</div>
+
+ </div>
+  </div>
+  </div>
+
+  <br><br>
+  <br>
+  <br>
+
+<img src="assets/image/m.svg" height="900" width="1400"></img>
+
+
+
+
+<div class="box">
+  <div class="cards">
+    <div class="imgBx">
+        <img src="assets/image/hostinger.webp" alt="images">
+    </div>
+    <div class="details">
+        <h2>server<br><span>HOSTINGER</span></h2>
+    </div>
+  </div>
+
+   <div class="cards">
+     <div class="imgBx">
+        <img src="https://www.wanderglobe.org/wp-content/uploads/2019/05/GoDaddy-Web-Hosting.jpg" alt="images">
+     </div>
+     <div class="details">
+        <h2>server<br><span>GODADDY</span></h2>
+      </div>
+   </div>
+
+   <div class="cards">
+     <div class="imgBx">
+        <img src="https://miro.medium.com/max/700/1*vb_oGv53xB5SoOg2WxAVHg.png" alt="images">
+     </div>
+     <div class="details">
+        <h2>server<br><span>AWS</span></h2>
+      </div>
+   </div>
+
+</div>
+
+</div>
+<br>
+<br>
+
+
+<br>
+
+</p>
+
+
+<footer>
+  <CENTER>
+<div class="st">
+  <h1>@FOLLOW ON SOCIAL MEDIA@</h1>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <ul class="icons">
+
+<li><a href="https://www.linkedin.com/company/classicwebcoder/" target="_blank"><span class="fab fa-linkedin"></span></span></a></li>
+<li><a href="#"><span class="fab fa-stack-overflow"></span></a></li>
+<li><a href="#"><span class="fab fa-github"></span></a></li>
+<li><a href="https://www.youtube.com/channel/UCW-vAPrD3hqtZe_jN3E3Yaw" target="_blank"><span class="fab fa-youtube"></span></a></li>
+</ul>
+ 
+
+
+
+
+  
+  <hr>
+  <div class="HH">
+  <h2 style="color:#fff;">© 2020 CLASSICWEBCODER . coded by MAHESHWARAN.M</h2>
+</div>
+  
+    </CENTER>
+  </div>
+
+
+</footer>
+</body>
+</HTML>

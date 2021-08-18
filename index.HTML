@@ -1,0 +1,564 @@
+<HTML>
+      <HEAD> 
+<meta charset="UTF=8">
+<meta NAME ="VIEWPORT" content="WIDTH=DEVICE-WITH, INITIAL-SCALE=1.0">
+<meta http-equiv="X-UA-COMPATIBE" content="IE=EDGE"  >
+<link rel="stylesheet" href="assets/css/CLASSICWEBCODER.CSS"/>
+<link rel="stylesheet" href="../package/swiper-bundle.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="tracker" sizes="1x1" href="https://static1.squarespace.com/static/585a4892bebafba69928fcd7/58d854001e5b6cc3c401841b/58d854938419c267b73956cb/1490572452018/b.gif">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+<style>
+     body{
+  background-color:#34a2bf2b;
+  
+     }
+    
+ 
+
+ .cardd{
+     height: 500px;
+     width: 1300px;
+    margin: 0 20px;
+    background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+  animation: animate 1s linear infinite;
+   
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+ }
+ 
+ 
+.cardd .img{
+    height: 900px;
+    width: 100%;
+}
+
+.cardd .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.cradd.top-text{
+    padding: 5px;
+}
+
+.cardd .top-text .name{
+   font-size: 25px;
+   font-weight: 600;
+   color: #202020;
+}
+
+.cradd.top-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3e ;
+    line-height: 20px;
+}
+
+.cardd .bottom-text{
+    padding: 0 20px 10px 20px;
+     margin-top :5px ;
+    ;
+    
+}
+
+
+
+.wrapper{
+  display: grid;
+  margin: 200px 90px auto;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+@media (max-width: 700px) {
+  .wrapper{
+    margin: 200px auto;
+  }
+}
+.wrapper .box{
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  perspective: 1000px;
+}
+.wrapper .box .front-face{
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .front-face .icon{
+  height: 80px;
+}
+.box .front-face .icon i{
+  font-size: 65px;
+}
+.box .front-face span,
+.box .back-face span{
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .front-face .icon i,
+.box .front-face span{
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box .back-face{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 220px;
+  width: 100%;
+  padding: 30px;
+  color: #fff;
+  opacity: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+  transform: translateY(110px) rotateX(-90deg);
+  box-shadow: 0px 5px 20px 0px rgba(0, 81, 250, 0.1);
+  transition: all 0.5s ease;
+}
+.box .back-face p{
+  margin-top: 10px;
+  text-align: justify;
+}
+.box:hover .back-face{
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+.box:hover .front-face{
+  opacity: 0;
+  transform: translateY(-110px) rotateX(90deg);
+}
+
+
+
+.box{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+  }
+  .cardS{
+    position:sticky;
+    width: 300px;
+    height: 350px;
+    background:rgb(174, 238, 238);
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow:0 2px 10px rgba(0,0,0,.2);
+  }
+  .cardS:before,
+  .cardS:after
+  {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background::rgb(174, 238, 238);
+    z-index:-1;
+  }
+  .cardS:hover:before{
+  transform: rotate(20deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .cardS:hover:after{
+  transform: rotate(10deg);
+  box-shadow: 0 2px 20px rgba(0,0,0,.2);
+  }
+  .cardS .imgBx{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #222;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .cardS:hover .imgBx
+  {
+    bottom: 80px;
+  }
+
+  .cardS .imgBx img{
+      position: absolute; ;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .cardS .details{
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      height: 60px;
+      text-align: center;
+  }
+
+  .cardS .details h2{
+   margin: 0;
+   padding: 0;
+   font-weight: 600;
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+   text-transform: uppercase;
+   font-family: 'Satisfy', cursive;
+  } 
+
+  .cardS .details h2 span{
+  font-weight: 900;
+  font-size: 32px;
+  color: #1900ff91;
+  display: block;
+  margin-top: 5px;
+  font-family: 'Satisfy', cursive;
+   }
+   
+   
+
+   .card{
+  font-family: "Candara", sans-serif;
+  width: 340px;
+  display: left;
+  position: sticky;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image img{
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.profile-image img{
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-top: -75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  border: 10px solid #fff;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.profile-image img:hover{
+  transform: scale(1.1);
+}
+
+.card-content h3{
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+.card-content p{
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 20px 5px 20px;
+}
+.card{
+     height: 800px;
+     width: 1300px;
+    margin: 0 20px;
+    background: linear-gradient(rgb(94, 79, 226),rgb(91, 211, 227));
+  animation: animate 1s linear infinite;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+ 
+ 
+.card .img{
+    height: 900px;
+    width: 100%;
+}
+
+.card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.crad.top-text{
+    padding: 5px;
+}
+
+.card .top-text .name{
+   font-size: 25px;
+   font-weight: 600;
+   color: #202020;
+}
+
+.crad.top-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3e ;
+    line-height: 20px;
+}
+
+.card .bottom-text{
+    padding: 0 20px 10px 20px;
+     margin-top :5px ;
+    ;
+    
+}
+</style>
+
+
+<TITLE>@CLASSICWEBCODER</TITLE>
+      </HEAD>
+<body>
+    <NAV>
+<DIV CLASS="LOGO">
+    <H1 style="color:#6b086e;"> CLASSICWEBCODER   </H1>
+</DIV>
+<ul class="menu">
+    <li><A href="index.HTML">HOME</A></li>
+
+    <li><a href="2.html" >SERVICES</a></li>
+    
+    <LI><A href="3.html">ABOUT</A></LI>
+
+    <LI><A href="4.html">CONTACTS</A></LI>
+
+dsf
+
+</uL>
+
+
+
+    </NAV>
+    <img src="assets/image/o.png" height="700" width="1400" class="img-fluid"></IMG>
+    
+<center>
+    <DIV CLASS="LOGO">  
+<h1 style="color:#6b086e;">CLASSICWEBCODER</h1>
+
+<br><hr><h1 style="color:#6b086e">WE ARE CREATING WEB SITES FOR YOUR BUSINESS
+</h1>
+</DIV>
+</center>
+
+      
+  
+      <div class="container">
+        <div class="cardd">
+        <div class="img">
+  
+       <img src="assets/image/c.1.svg"></img>
+             
+           </div>
+       </div>
+        </div>
+        </div>
+
+        
+
+
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        
+       <div class="wrapper">
+        <div class="box">
+          <div class="front-face">
+           <img src="assets/image/i.svg"></img>
+          </div>
+      <div class="back-face">
+            <span>Web Design</span>
+            <p>That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.</p>
+      </div>
+      
+      </div>
+      <div class="box">
+          <div class="front-face">
+            <img src="assets/image/h.svg"></img>
+          </div>
+      <div class="back-face">
+            <span>Web development</span>
+            <p>Planning & Developmente
+              You just have to provide us the framework, the entire planning and development is our headache.
+      </p>
+      </div>
+      </div>
+      <div class="box">
+          <div class="front-face">
+            
+      <img src="assets/image/j.svg"> </img>
+      
+          </div>
+      <div class="back-face">
+            <span>RESPONSIVE DESIGNS
+      
+      
+            </span>
+      <p>Responsive Design
+        We offer responsive design options on our  website builder so that the designs are always optimised for tablet, mobile, and desktop browsing</p>
+      </div>
+      </div>
+      </div>
+      
+       
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <center>
+        <div class="box">
+          <div class="cardS">
+            <div class="imgBx">
+                <img src="assets/image/mah.jpg" alt="images">
+            </div>
+            <div class="details">
+                <h2>FOUNDER<br><span>MAHESH</span></h2>
+            </div>
+          </div>
+        
+           <div class="cardS">
+             <div class="imgBx">
+                <img src="assets/image/nav.jpg" alt="images">
+             </div>
+             <div class="details">
+                <h2>CO-FOUNDER<br><span> NAVEEN</span></h2>
+              </div>
+           </div>
+        
+          
+             
+        </div>
+
+<br>
+<br>
+<br>
+<br>
+      <div class="container">
+        <div class="card">
+          <center>
+  <img src="assets/image/3.2.svg"height="350"></img>
+  <ul style="color: #fff;">
+             <li><h2>* Project manager: Without one of these, it’s very easy for a project to spiral out of control. A project manager is there to facilitate communication, manage the project, and ensure everybody stays on track.
+            </h2> </li><br>
+            <li><h2>* Project architect/strategist: The architect or strategist helps to formulate the website strategy. They research and analyze the current website, craft personas for the target audience, and create wireframes for the new site.</h2></li><br>
+            <li><h2>* Web designer: An integral part of the team, a web designer is responsible for the design and functionality of the website. A talented designer will take a concept and bring it to life.</h2></li><br>
+              <li><h2>* Back-end developer: The back-end developer takes the strategy and design and builds the framework for the site interface. They develop the code, perform numerous tests, and deal with any bugs or issues that arise.</h2></li><br>
+                <li><h2>* Front-end developer: The front-end developer develops and implements the part of the website that users engage with, and makes it look good across a range of browsers and devices.</h2></li><br>
+                  <li><h2>* The tester will try out the website on a range of devices and browsers, and try to break the site to find out if it has any weaknesses.</h2></li><br>
+            </ul></center>
+           </div>
+       </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      <footer>
+        <CENTER>
+      <div class="st">
+        <h1>@FOLLOW ON SOCIAL MEDIA@</h1>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      
+        <ul class="icons">
+      
+      <li><a href="https://www.linkedin.com/company/classicwebcoder/" target="_blank"><span class="fab fa-linkedin"></span></span></a></li>
+      <li><a href="#"><span class="fab fa-stack-overflow"></span></a></li>
+      <li><a href="#"><span class="fab fa-github"></span></a></li>
+      <li><a href="https://www.youtube.com/channel/UCW-vAPrD3hqtZe_jN3E3Yaw" target="_blank"><span class="fab fa-youtube"></span></a></li>
+      </ul>
+       
+      
+      
+      
+      
+        
+        <hr>
+        <div class="HH">
+        <h2 style="color:#fff;">© 2020 CLASSICWEBCODER . coded by MAHESHWARAN.M</h2>
+      </div>
+        
+          </CENTER>
+        </div>
+      
+      
+      </footer>
+
+
+</body>
+
+</HTML>
